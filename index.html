@@ -28,34 +28,71 @@
         </div>
     </header>
     <hr class="my-5">
-    <main class="w-[80%] mx-auto">
-        <div>
-            <button class="bg-blue-500 text-white px-5 py-2"   id="all-btn">All</button>
-            <button class="bg-white text-gray-500  px-5  py-2"  id="Interview-btn">Interview</button>
-            <button class="bg-white text-gray-500 px-5 py-2"  id="Rejected-btn">Rejected</button>
+    <main class="w-[80%] mx-auto ">
+        <div class="mb-6">
+            <button onclick="toggleStyle('all-btn-id')" class="bg-blue-500 text-white px-5 py-2"   id="all-btn-id">All</button>
+            <button class="bg-white text-gray-500  px-5  py-2"  id="Interview-btn-id">Interview</button>
+            <button class="bg-white text-gray-500 px-5 py-2"  id="Rejected-btn-id">Rejected</button>
         </div>
-        <section id="allcard">
-            <div class="card flex justify-between bg-white py-5 mx-auto">
+        <section id="allcards" class="space-y-5">
+            <!-- card-1 -->
+            <div class="card flex justify-between bg-white p-8 mx-auto ">
                 <div class="space-y-6">
-                    <p class="titale">Mobile First Corp</p>
+                    <p class="titale text-2xl">Mobile First Corp</p>
                     <p class="diss ">React Native Developer</p>
                     <p class="detls ">Remote • Full-time • $130,000 - $175,000</p>
-                    <p class="status">Not Applied</p>
+                    <p class="status bg-gray-500">Not Applied</p>
                     <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                   <div class="flex gap-5"> 
-                    <button class="Interview-btn text-green-500  px-4 py-2">INTERVIEW</button>
-                    <button class="Rejected-btn text-red-500 px-4 py-2">REJECTED</button>
+                    <button class="Interview-btn text-green-500  px-4 py-2 border border-green-500;">INTERVIEW</button>
+                    <button class="Rejected-btn text-red-500 px-4 py-2 border border-red -500">REJECTED</button>
 
                  </div>
                    
                 </div>
                 <!-- delete right -->
-                <div><button>delate</button></div>
+                <div><button class="btn-delate bg-white px-5 py-2">delate</button></div>
             </div>
+            <!-- card-2 -->
+            <div class="card flex justify-between bg-white p-8 mx-auto ">
+                <div class="space-y-6">
+                    <p class="titale text-2xl">Mobile First Corp</p>
+                    <p class="diss ">React Native Developer</p>
+                    <p class="detls ">Remote • Full-time • $130,000 - $175,000</p>
+                    <p class="status bg-gray-500">Not Applied</p>
+                    <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                  <div class="flex gap-5"> 
+                    <button class="Interview-btn text-green-500  px-4 py-2 border border-green-500;">INTERVIEW</button>
+                    <button class="Rejected-btn text-red-500 px-4 py-2 border border-red -500">REJECTED</button>
 
+                 </div>
+                   
+                </div>
+                <!-- delete right -->
+                <div><button class="btn-delate bg-white px-5 py-2">delate</button></div>
+            </div>
+            <!-- card-3 -->
+            
+            <div class="card flex justify-between bg-white p-8 mx-auto ">
+                <div class="space-y-6">
+                    <p class="titale text-2xl">Mobile First Corp</p>
+                    <p class="diss ">React Native Developer</p>
+                    <p class="detls ">Remote • Full-time • $130,000 - $175,000</p>
+                    <p class="status bg-gray-500">Not Applied</p>
+                    <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                  <div class="flex gap-5"> 
+                    <button class="Interview-btn text-green-500  px-4 py-2 border border-green-500;">INTERVIEW</button>
+                    <button class="Rejected-btn text-red-500 px-4 py-2 border border-red -500">REJECTED</button>
+
+                 </div>
+                   
+                </div>
+                <!-- delete right -->
+              
+              
         </section>
     </main>
-   
+   <script src="./script/sccirpt.js"></script>
 </body>
 
 </html>
