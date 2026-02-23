@@ -1,20 +1,45 @@
-let InterviewList =[];
-let RejectedList =[];
+let interviewList =[];
+let rejectedList =[];
 let total=document.getElementById('total')
-let Interview=document.getElementById('Interview')
-let Rejected =document.getElementById('Rejected')
+let interview=document.getElementById('Interview')
+let rejected =document.getElementById('Rejected')
 
 const allcard = document.getElementById('allcards')
 const mainCCont =document.querySelector('main')
 
 function count(){
     total.innerText=allcard.children.length
-    Interview.innerText=InterviewList.length
-    Rejected.innerText=RejectedList.length
+    interview.innerText=interviewList.length
+    rejected.innerText=rejectedList.length
 
 }
 count()
-function toggleStyle(){
-    console.log('click');
-    
-}
+
+// const alllFilterBtn=document.getElementById('all-btn-id')
+// const interviewFilterBtn=document.getElementById('Interview-btn-id')
+// const rejectedFilterBtn =document.getElementById('Rejected-btn-id')
+
+
+const alllFilterBtn=document.getElementById('all-btn-id')
+const interviewFilterBtn=document.getElementById('Interview-btn-id')
+const rejectedFilterBtn =document.getElementById('Rejected-btn-id')
+
+function toggleStyle(id){
+
+   alllFilterBtn.classList.remove('bg-blue-500', 'text-white')
+   interviewFilterBtn.classList.remove('bg-blue-500', 'text-white')
+   rejectedFilterBtn.classList.remove('bg-blue-500', 'text-white') 
+
+   alllFilterBtn.classList.add('bg-white', 'text-gray-500')
+   interviewFilterBtn.classList.add('bg-white', 'text-gray-500')
+   rejectedFilterBtn.classList.add('bg-white', 'text-gray-500') 
+
+
+ const selected =document.getElementById(id) 
+ selected.classList.remove('bg-white', 'text-gray-500')
+  selected.classList.add('bg-black','text-white')
+  
+  
+   }
+
+
