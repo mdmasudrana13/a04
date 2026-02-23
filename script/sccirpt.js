@@ -5,7 +5,7 @@ let interview=document.getElementById('Interview')
 let rejected =document.getElementById('Rejected')
 
 const allcard = document.getElementById('allcards')
-const mainCCont =document.querySelector('main')
+const mainCont =document.querySelector('main')
 
 function count(){
     total.innerText=allcard.children.length
@@ -41,5 +41,14 @@ function toggleStyle(id){
   
   
    }
+mainCont.addEventListener('click',function(event){
+   const parenNodes =event.target.parentNode.parentNode;
+   const titaleName=parenNodes.querySelector('.titale').innerText ;
+   
+   
 
+  
+    
+    
+})
 
