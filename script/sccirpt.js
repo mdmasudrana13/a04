@@ -141,19 +141,19 @@ function renderCards() {
 
 allBtn.addEventListener("click", function () {
   currentTab = "all";
-  toggleStyle("fastBtn");
+  toggleStyle("all-btn-id");
   renderCards();
 });
 
 interviewBtn.addEventListener("click", function () {
   currentTab = "interview";
-  toggleStyle("secountBtn");
+  toggleStyle("Interview-btn-id");
   renderCards();
 });
 
 rejectedBtn.addEventListener("click", function () {
   currentTab = "rejected";
-  toggleStyle("thardBtn");
+  toggleStyle("Rejected-btn-id");
   renderCards();
 });
 
